@@ -7,15 +7,15 @@
 
   "content_scripts": [
     {
-     "matches": [
-      "http://*/*",
-      "https://*/*"
-    ],
-      "js": [
-            "sendlog.js"
-        ]
+     	"matches": [
+      		"http://*/*",
+      		"https://*/*"
+    	],
+    	"js": ["sendlog.js"],
+     	"css":["g_footer.css"]
     }
   ],
+
   "permissions": [
     "activeTab",
     "https://browser.xn--e1tu68bcc.com/"
